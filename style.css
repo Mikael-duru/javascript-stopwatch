@@ -15,12 +15,19 @@ main {
   text-align: center;
   font-family: "Inconsolata", monospace;
   font-weight: 500;
-  padding: 0.5rem;
+  padding: 0 0.3rem 0.3rem;
 }
 .timer_title {
+  color: #002984;
+  font-size: 2rem;
   font-size: 1.8rem;
   padding-bottom: 1.2rem;
-  color: #002984;
+}
+@media screen and (max-width: 162px) {
+  .timer_title {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+  }
 }
 @media screen and (min-width: 360px) {
   .timer_title {
@@ -39,9 +46,15 @@ main {
   }
 }
 .timer_display {
-  font-size: 3rem;
-  padding-bottom: 1rem;
   color: #212121;
+  font-size: 2.9rem;
+  padding-bottom: 1rem;
+}
+@media screen and (max-width: 279px) {
+  .timer_display {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
 }
 @media screen and (min-width: 360px) {
   .timer_display {
@@ -60,22 +73,39 @@ main {
 }
 .timer_container {
   border: 3px solid #4caf50;
-  border-radius: 1.5rem;
-  padding: 0.5rem 0;
+  border-radius: 0.5rem;
+  padding: 0.3rem 0;
   background-color: #e8f5e9;
 }
+@media screen and (min-width: 320px) {
+  .timer_container {
+    border: 3px solid #4caf50;
+    border-radius: 1.5rem;
+    padding: 0.5rem 0;
+    background-color: #e8f5e9;
+  }
+}
 .timer_btn {
-  width: 5rem;
-  height: 1.875rem;
   border: 1px solid #002984;
-  border-radius: 12px;
   color: #fff;
-  font-weight: 800;
-  font-size: 0.9rem;
   text-align: center;
   cursor: pointer;
   transform: scale(1);
   transition: all 0.3s ease-in-out;
+  width: 5rem;
+  height: 1.875rem;
+  border-radius: 12px;
+  font-weight: 800;
+  font-size: 0.9rem;
+}
+@media screen and (max-width: 300px) {
+  .timer_btn {
+    width: 2.5rem;
+    height: 1.5rem;
+    border-radius: 5px;
+    font-weight: 800;
+    font-size: 0.7rem;
+  }
 }
 .timer_btn-green {
   background-color: green;
