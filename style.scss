@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.timer {
+  text-align: center;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 500;
+  padding: .5rem;
+
+  &_title {
+    font-size: 1.8rem;
+    padding-bottom: 1.2rem;
+    color: #002984;
+
+    @media screen and (min-width: 360px) {
+      font-size: 2rem;
+    }
+    @media screen and (min-width: 375px) {
+      font-size: 2.2rem;
+    }
+    @media screen and (min-width: 650px) {
+      font-size: 3.5rem;
+      padding-bottom: 2rem;
+    }
+  }
+
+  &_display {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: #212121;
+
+    @media screen and (min-width: 360px) {
+      font-size: 3.3rem;
+    }
+    @media screen and (min-width: 375px) {
+      font-size: 3.6rem;
+    }
+    @media screen and (min-width: 650px) {
+      font-size: 6rem;
+    }
+  }
+
+  &_container {
+    border: 3px solid #4caf50;
+    border-radius: 1.5rem;
+    padding: .5rem 0;
+    background-color: #e8f5e9;
+  }
+
+  &_btn {
+    width: 5rem;
+    height: 1.875rem;
+    border: 1px solid #002984;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 800;
+    font-size: .9rem;
+    text-align: center;
+    cursor: pointer;
+    transform: scale(1);
+    transition: all .3s ease-in-out;
+
+    &-green {
+      background-color: green;
+    }
+
+    &-yellow {
+      background-color: yellow;
+      color: #000;
+      letter-spacing: .1rem;
+    }
+
+    &-red {
+      background-color: red;
+    }
+
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
+}
