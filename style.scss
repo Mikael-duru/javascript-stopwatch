@@ -95,10 +95,22 @@ main {
     }
 
     width: 5rem;
-    height: 1.875rem;
+    height: 2rem;
     border-radius: 12px;
     font-weight: 800;
     font-size: .9rem;
+
+    @media screen and (min-width: 375px) {
+      width: 6rem;
+      height: 2rem;
+      font-size: 1rem;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 9rem;
+      height: 2.5rem;
+      font-size: 1.2rem;
+    }
 
     &-green {
       background-color: green;
